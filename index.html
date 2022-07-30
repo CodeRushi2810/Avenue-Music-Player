@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avenue | Music Player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Play&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./FavIcons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./FavIcons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./FavIcons/favicon-16x16.png">
+</head>
+
+<body id="main-body">
+    <div class="lottie lottie1">
+        <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_cyr9bfas.json"  background="transparent"  speed="1"  style="width: 100%; height: 500px;"  loop  autoplay></lottie-player>
+    </div>
+    <div class="wrapper">
+        <div class="top-bar">
+            <i class="material-icons">expand_more</i>
+            <span>Now Playing</span>
+            <i class="material-icons">more_horiz</i>
+        </div>
+        <div class="img-area">
+            <img src="" alt="">
+        </div>
+        <div class="song-details">
+            <p class="name"></p>
+            <p class="artist"></p>
+        </div>
+        <div class="progress-area">
+            <div class="progress-bar"></div>
+            <div class="timer">
+                <span class="current">0:00</span>
+                <span class="duration"></span>
+            </div>
+            <audio id="main-audio" src=""></audio>
+        </div>
+        <div class="controls">
+            <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+            <i id="prev" class="material-icons">skip_previous</i>
+            <div class="play-pause">
+                <i class="material-icons">play_arrow</i>
+            </div>
+            <i id="next" class="material-icons">skip_next</i>
+            <i id="more-music" class="material-icons">queue_music</i>
+        </div>
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i id="next" class="material-icons">queue_music</i>
+                    <span>Music List</span>
+                </div>
+                <i id="close" class="material-icons">close</i>
+            </div>
+            <ul>
+
+            </ul>
+        </div>
+
+    </div>
+    <div class="lottie lottie2">
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_4lcnl6c8.json"  background="transparent"  speed="1"  style="width: 100%; height: 500px;"  loop  autoplay></lottie-player>
+    </div>
+
+    <script src="js/music-list.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+
+</html>
