@@ -12,7 +12,7 @@ const wrapper = document.querySelector(".wrapper"),
     showMoreBtn = wrapper.querySelector("#more-music"),
     hideMusicBtn = musicList.querySelector("#close"),
     shaker = document.querySelector(".shake"),
-    mainBody = document.getElementById("main-body");
+    shakeImage = document.getElementById("shakeImg");
 
 
 let musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
@@ -33,14 +33,14 @@ function loadMusic(indexNumb) {
 
 // Function to play music
 function playMusic() {
-    mainBody.classList.add("shake")
+    shakeImage.classList.add("shake")
     wrapper.classList.add("paused");
     playPauseBtn.querySelector("i").innerText = "pause"
     mainAudio.play();
 }
 // Function to stop music
 function pauseMusic() {
-    mainBody.classList.remove("shake");
+    shakeImage.classList.remove("shake");
     wrapper.classList.remove("paused");
     playPauseBtn.querySelector("i").innerText = "play_arrow"
     mainAudio.pause();
